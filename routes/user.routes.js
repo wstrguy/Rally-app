@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
 router.get("/count", customerCount);
 router.post("/register", customerSignup);
 router.put("/update/:id", editCustomerData);
-router.get("/del", delCustomerData);
+router.delete("/del", delCustomerData);
 
 // handling general errors
 router.all("*", (req, res) => {
